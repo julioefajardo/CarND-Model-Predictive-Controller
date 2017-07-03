@@ -13,7 +13,9 @@ Where `x` and `y` are the current postion of the car, `psi` is the orientation o
 The values chosen for `N` and `dt` are `8` and `0.1` based on experimentation and recomendations of Udacity's office hours. This means that i have a prediction horizon of `8 * 0.1 = 0.8 sec`, other values were tested but the ones chosen result in most stable prediction.
 
 * ### Polynomial Fitting and MPC Preprocessing
+In order to facilitate the `cte` and `epsi` calculation, it was necessary to transform the waypoints from map coordinates to car coordinates to simplifies the process to fit a polynomial because the vehicle's origin (x, y) and orientation angle is fixed on (0,0).
 
+![rotation](./rot.png)
 
 * ### Model Predictive Control with Latency
 
