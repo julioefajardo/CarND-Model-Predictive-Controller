@@ -5,7 +5,8 @@ Self-Driving Car Engineer Nanodegree Program
 ## Rubric Points
 * ### The Model
 Because Model Predictive Controller is based on state space models, the kinematic model is given by:
-\(a=u+b\)
+
+\pi
 
 * ### Timestep Length and Elapsed Duration (N & dt)
 * ### Polynomial Fitting and MPC Preprocessing
