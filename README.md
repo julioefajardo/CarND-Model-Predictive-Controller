@@ -2,6 +2,11 @@
 Self-Driving Car Engineer Nanodegree Program
 
 ---
+## Rubric Points
+* ### The Model
+* ### Timestep Length and Elapsed Duration (N & dt)
+* ### Polynomial Fitting and MPC Preprocessing
+* ### Model Predictive Control with Latency
 
 ## Dependencies
 
