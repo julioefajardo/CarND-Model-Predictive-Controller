@@ -10,7 +10,7 @@ Because Model Predictive Controller is based on state space models, the kinemati
 Where `x` and `y` are the current postion of the car, `psi` is the orientation of the car, `v` is the velocity of the car, `delta` is the steering angle, `a` is the acceleration of the car, `cte` the cross-track error and `epsi` the orientation error of the car.  
 
 * ### Timestep Length and Elapsed Duration (N & dt)
-The values chosen for N and dt are 8 and 0.1 based on experimentation and remodendations of Udacity's office hours. These values mean that the optimizer is considering a one-second duration in which to determine a corrective trajectory. Adjusting either N or dt (even by small amounts) often produced erratic behavior. Other values tried include 20 / 0.05, 8 / 0.125, 6 / 0.15, and many others.
+The values chosen for N and dt are 8 and 0.1 based on experimentation and recomendations of Udacity's office hours. This means that i have a prediction horizon of 8 * 0.1 = 0.8 sec, other values were tested but the ones chosen result in most stable prediction.
 
 * ### Polynomial Fitting and MPC Preprocessing
 
