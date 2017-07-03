@@ -18,7 +18,7 @@ In order to facilitate the `cte` and `epsi` calculation, it was necessary to tra
 ![rotation](./rot.png)
 
 * ### Model Predictive Control with Latency
-
+Based on the constraint of handle a latency of 100 ms, the values obtained from the global kinematic model (dt = 0.1 s) was taking into account as input of the MPC process in order to deal with it.
 
 ## Dependencies
 
