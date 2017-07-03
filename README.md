@@ -5,12 +5,20 @@ Self-Driving Car Engineer Nanodegree Program
 ## Rubric Points
 * ### The Model
 Because Model Predictive Controller is based on state space models, the kinematic model is given by:
-
 ![kinematic](./model.png)
 
+Where `x` and `y` are the current postion of the car, `psi` is the orientation of the car, `v` is the velocity of the car, `delta` is the steering angle, `a` is the acceleration of the car, `cte` the cross-track error and `epsi` the orientation error of the car.  
+
 * ### Timestep Length and Elapsed Duration (N & dt)
+The values chosen for `N` and `dt` are `8` and `0.1` based on experimentation and recomendations of Udacity's office hours. This means that i have a prediction horizon of `8 * 0.1 = 0.8 sec`, other values were tested but the ones chosen result in most stable prediction.
+
 * ### Polynomial Fitting and MPC Preprocessing
+In order to facilitate the `cte` and `epsi` calculation, it was necessary to transform the waypoints from map coordinates to car coordinates to simplifies the process to fit a polynomial because the vehicle's origin (x, y) and orientation angle is fixed on (0,0).
+
+![rotation](./rot.png)
+
 * ### Model Predictive Control with Latency
+
 
 ## Dependencies
 
